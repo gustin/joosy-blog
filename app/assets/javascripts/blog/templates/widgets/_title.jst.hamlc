@@ -1,0 +1,6 @@
+%h1
+  %i.icon-book
+  = @title
+  %sup.badge.badge-success
+    240.05.2012
+

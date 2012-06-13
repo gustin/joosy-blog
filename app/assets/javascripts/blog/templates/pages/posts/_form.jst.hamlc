@@ -1,0 +1,6 @@
+%form.well
+  %input.span10{:name => 'post[title]', :placeholder => 'Title'}
+  %textarea.span10{:name => 'post[body]', :placeholder => 'Body'}
+  %input.btn.btn-sucess.span4{:type => 'submit', :value => 'Save'}
+
+

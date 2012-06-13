@@ -1,0 +1,5 @@
+%form{:style => 'display: none'}
+  %input{:type => 'text', :name => 'post[title]'}
+  %input{:type => 'submit'}
+!= @renderDynamic '_title', @post
+
