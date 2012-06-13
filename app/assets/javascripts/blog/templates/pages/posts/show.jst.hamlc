@@ -1,6 +1,5 @@
 != @widget 'div', => new TitleEditorWidget(@post)
 
-!= @renderDynamic '_title', @post
 %hr
 %p
   = @post('body')

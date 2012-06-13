@@ -4,13 +4,13 @@ Joosy.namespace 'Posts', ->
     @layout ApplicationLayout
     @view   'edit'
 
+    elements:
+      'rawForm': 'form'
+
     @afterLoad ->
       @form = Joosy.Form.attach @rawForm,
         resource: @data.post
         success: (data) => @navigate '/'
-
-    elements:
-      'rawForm': 'form'
 
     @fetch (complete) ->
       Post.find @params.id, (post) =>
